@@ -1,1 +1,179 @@
-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River City Police Department - Official Site</title>
+    <!-- Load Tailwind CSS from CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a cleaner look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Very light background */
+        }
+        /* Style for images within feature blocks */
+        .feature-image {
+            max-height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        /* Custom scrollbar for aesthetics */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #1e40af; /* Darker blue */
+            border-radius: 10px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #dbeafe;
+        }
+        /* Style for the badge image */
+        .badge-icon {
+            height: 96px; /* Increased size for prominence */
+            width: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="min-h-screen bg-gray-50">
+
+        <!-- Navigation Bar -->
+        <nav class="bg-blue-800 shadow-xl sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <span class="text-white font-extrabold text-xl tracking-wider">RCPD</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#welcome" class="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Home</a>
+                            <a href="#services" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">Services</a>
+                            <a href="#contact" class="text-gray-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150">Contact</a>
+                            <a href="#recruitment" class="bg-yellow-400 text-blue-900 hover:bg-yellow-300 px-3 py-2 rounded-md text-sm font-bold transition duration-150 shadow-md">Careers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container mx-auto px-4 py-8">
+
+            <!-- Header Section - Official RCPD Banner -->
+            <header class="text-center mb-8 bg-white p-8 rounded-xl shadow-lg border-t-8 border-blue-600">
+                <div class="flex justify-center items-center mb-4">
+                    <!-- Updated with the provided RCPD Badge image URL -->
+                    <img 
+                        src="https://static.wikia.nocookie.net/emergency-response-liberty-county/images/6/6c/RCPD_Police_Badge.png/revision/latest?cb=20240204080943" 
+                        alt="Official RCPD Police Badge Logo" 
+                        class="badge-icon mr-4"
+                        onerror="this.onerror=null; this.src='https://placehold.co/96x96/0f172a/ffffff?text=RCPD+Badge';">
+
+                    <h1 class="text-6xl font-black text-gray-900 tracking-tighter">RCPD</h1>
+                </div>
+                <p class="text-2xl text-gray-600 font-semibold">River City Police Department</p>
+                <p class="text-lg text-gray-500 mt-2">Serving and Protecting Our Community with Integrity and Respect.</p>
+            </header>
+
+            <!-- EMERGENCY INFO BAR (Always prominent) -->
+            <div id="welcome" class="bg-red-700 text-white p-5 rounded-xl shadow-lg mb-10 text-center font-extrabold text-2xl animate-pulse">
+                🚨 EMERGENCY? CALL 9-1-1 IMMEDIATELY 🚨
+            </div>
+
+            <!-- Main Content Area: Welcome and Quick Links -->
+            <section class="bg-white p-8 rounded-xl shadow-lg mb-10">
+                <h2 class="text-3xl font-bold text-blue-800 mb-4">Welcome to Our Digital Precinct</h2>
+                <div class="text-gray-700 space-y-4">
+                    <p>The River City Police Department is dedicated to ensuring a safe and secure environment for all residents, businesses, and visitors. We strive to build strong relationships with the community through transparency, fairness, and dedicated service.</p>
+                    <p>This website is your resource for non-emergency services, crime prevention tips, department news, and information on joining our team. Together, we can make River City a better and safer place.</p>
+                </div>
+                <div class="mt-6 flex flex-wrap gap-4">
+                    <a href="#non-emergency-feature" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-150">Report Non-Emergency (3-1-1)</a>
+                    <a href="#recruitment" class="bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-400 transition duration-150">Join Our Team</a>
+                </div>
+            </section>
+
+            <!-- Department Services List (Vertical, Detailed Features) -->
+            <h2 id="services" class="text-4xl font-bold text-gray-800 mb-8 mt-10 border-b pb-4">Core Department Resources</h2>
+            <main class="space-y-10">
+
+                <!-- Feature 1: Patrol Division -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-8 border-blue-600 md:flex md:items-center">
+                    <div class="md:w-3/4">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-2">Patrol Division</h3>
+                        <p class="text-lg text-gray-600 mb-4">Our uniformed officers are the backbone of the RCPD, providing rapid response and maintaining a highly visible presence throughout all city districts 24 hours a day, 7 days a week.</p>
+                        <p class="text-sm text-gray-500">Patrol officers focus on crime prevention, emergency response, traffic enforcement, and community engagement. They are dedicated to ensuring the immediate safety and security of River City.</p>
+                    </div>
+                    <div class="md:w-1/4 md:pl-6 mt-4 md:mt-0">
+                        <!-- IMAGE 1: RCPD Patrol Vehicle on a city street -->
+                        <img src="https://static.wikia.nocookie.net/emergency-response-liberty-county/images/3/3d/Charpol.png/revision/latest?cb=20221229093201" alt="A marked police patrol vehicle." class="rounded-lg shadow-md feature-image" onerror="this.onerror=null; this.src='https://placehold.co/300x200/0f172a/ffffff?text=RCPD+Vehicle+Fallback';">
+                    </div>
+                </div>
+                
+                <!-- Feature 2: Non-Emergency Reporting (Highlighted Block) -->
+                <div id="non-emergency-feature" class="bg-yellow-50 p-6 rounded-xl shadow-lg border-l-8 border-yellow-600 text-center">
+                    <h3 class="text-3xl font-bold text-yellow-800 mb-4">Need to Report a Non-Emergency?</h3>
+                    <p class="text-xl text-yellow-700 font-semibold mb-4">For non-life threatening incidents, property crimes, or general inquiries (like noise complaints or illegal parking), please use our dedicated non-emergency line.</p>
+                    <p class="text-5xl font-black text-yellow-900 tracking-wider">CALL: 3-1-1</p>
+                </div>
+
+                <!-- Feature 3: Youth Programs -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-8 border-blue-600 md:flex md:flex-row-reverse md:items-center">
+                    <div class="md:w-3/4 md:pr-6">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-2">Youth & Community Programs</h3>
+                        <p class="text-lg text-gray-600 mb-4">We believe in building bridges with the next generation. Our programs focus on mentorship, safety education, and positive interactions with local youth.</p>
+                        <p class="text-sm text-gray-500">Check out our Police Athletic League (PAL) and Safety Cadets for opportunities for young people to engage positively with the department and learn valuable life skills.</p>
+                    </div>
+                    <div class="md:w-1/4 mt-4 md:mt-0">
+                        <!-- IMAGE 2: Officer engaging with young people or community event -->
+                        <img src="https://www.teachingtimes.com/wp-content/uploads/2021/12/roblox-1024x1024.png" alt="An officer talking to a group of young people." class="rounded-lg shadow-md feature-image" onerror="this.onerror=null; this.src='https://placehold.co/300x200/818cf8/3730a3?text=Youth+Engagement+Fallback';">
+                    </div>
+                </div>
+
+                <!-- Feature 4: Safety & Prevention -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-8 border-blue-600 md:flex md:items-center">
+                    <div class="md:w-3/4">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-2">Crime Prevention & Safety Tips</h3>
+                        <p class="text-lg text-gray-600 mb-4">Protecting yourself and your property starts with awareness. We provide up-to-date resources and guides to help River City residents stay safe.</p>
+                        <p class="text-sm text-gray-500">Topics include neighborhood watch setup, securing your home from break-ins, and online safety for families and students.</p>
+                    </div>
+                    <div class="md:w-1/4 md:pl-6 mt-4 md:mt-0">
+                        <!-- IMAGE 3: Security lock, or a house secured with a chain or lock -->
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIWFRUVGBcYGBcVGBcdGhgYGBoXFxoYHRcYHSghGB8nHhcdITEhJSkrLy4uFx8zODMtNygtLisBCgoKDg0OGxAQGyslICUrLS0wLy0vLS0vLS0tLS0tLTUtLS0tLS0tLS0tLS0vLy0tLS0tLS0tLS0tLS0tLy0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYHAQj/xABJEAABAwIDAwgIAgcGBQUBAAABAAIRAyEEEjEFQVEGEyJhcYGRoRQyQlKxwdHwByMVM2JyguHxJENTkqLCNXOys9I0VFXD4hb/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/wQAMxEAAgIBAgQDBQgCAwAAAAAAAAECEQMSIQQTMUFRYZEUInGh8AUyQmKBscHRFeEkUvH/2gA'wAAEAAhEDEQA/wOGoQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhACEIQAhCEAIQhAf//Z" alt="A lock icon symbolizing security and prevention." class="rounded-lg shadow-md feature-image" onerror="this.onerror=null; this.src='https://placehold.co/300x200/34d399/065f46?text=Crime+Prevention+Fallback';">
+                    </div>
+                </div>
+
+                <!-- Feature 5: Transparency & Open Records -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-8 border-blue-600 md:flex md:flex-row-reverse md:items-center">
+                    <div class="md:w-3/4 md:pr-6">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-2">Transparency & Accountability</h3>
+                        <p class="text-lg text-gray-600 mb-4">The RCPD is committed to open communication with the public. We strive for accountability in all our actions and decision-making.</p>
+                        <p class="text-sm text-gray-500">Access departmental reports, policies, and community feedback forms through our Open Records portal.</p>
+                    </div>
+                    <div class="md:w-1/4 mt-4 md:mt-0">
+                        <!-- IMAGE 4: Gavel/scale of justice or stacks of documents/reports -->
+                        <img src="https://static.wikia.nocookie.net/emergency-response-liberty-county/images/4/4e/ERLCPoliceRender.png/revision/latest?cb=20240211135907" alt="A gavel and legal documents." class="rounded-lg shadow-md feature-image" onerror="this.onerror=null; this.src='https://placehold.co/300x200/99f6e4/0d9488?text=Transparency+Fallback';">
+                    </div>
+                </div>
+
+
+            </main>
+
+            <!-- Footer Section -->
+            <footer id="contact" class="text-center mt-12 pt-6 border-t border-gray-300 bg-white p-6 rounded-xl shadow-inner">
+                <p class="text-base font-semibold text-gray-600 mb-2">Contact RCPD</p>
+                <p class="text-sm text-gray-500">Physical Station: 305 Orchard Boulevard, River City (Near the Power Plant).</p>
+                <p class="text-sm text-gray-500">Non-Emergency Line: 3-1-1 | Main Office: (555) 727-4100</p>
+                <p class="text-xs text-gray-400 mt-4">&copy; 2025 River City Police Department. A Fictional Service for Roleplay.</p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
